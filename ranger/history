@@ -1,0 +1,22 @@
+open_with vlc
+search matrix
+search vis
+rename Wallpaper
+rename flcl-2.png
+wq
+hide
+hidden
+mkdir .fonts
+sudo
+mkdir vim
+mkdir urxvt
+mkdir polybar
+mkdir rofi
+ranger
+mkdir ranger
+
+mkdir .urxvt
+mkdir themes
+mkdir .themes
+delete
+mkdir compton

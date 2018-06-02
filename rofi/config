@@ -1,0 +1,4 @@
+rofi.theme: white.rasi 
+rofi.show-icons: true
+rofi.drun-icon-theme: Papirus
+rofi.sidebar-mode: false

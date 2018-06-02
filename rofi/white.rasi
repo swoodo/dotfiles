@@ -1,0 +1,146 @@
+/* ================================================= */
+/*  Rofi config by lans9831 modified by sander       */
+/*  Suggested icon pack: Papirus                     */
+/* ================================================= */
+
+* {
+  /* Make text color white and background fully transparent */
+  text-color:        #45373c;
+  background-color:  rgba(0,0,0,0);
+
+  /* This variables change other elements color
+   * Change here and it will change over all the
+   * theme (for an unified experience) */
+  fc-color: #dfdfdf;
+  bg-color: #121c27;
+  fc-color-trans: #45373c; 
+  bg-color-trans: #121c27;
+
+  accent-color: #C87D6D;
+  prompt-color: #C8566E;
+
+  font: "iosevka 11";
+}
+
+/* ================================================= */
+/* Main container                                    */
+/* ================================================= */
+#window {
+  
+  width:	 90%;
+  fullscreen:    false;
+  location:      2;
+  anchor:        2;
+  border:        0px 0px 0px 0px;
+  transparency:  "real";
+  spacing: 270px;
+
+  orientation:  vertical;
+  children:     [mainbox, dummy];
+}
+
+
+/* First container */
+#mainbox {
+  expand:            true;
+  background-color:  @bg-color-trans;
+  /* spacing:           5.1em; */
+  
+  border: 0px 3px 3px 3px;
+  border-color: @accent-color;
+}
+
+/* Dummy container */
+#dummy { 
+  expand: true; 
+}
+/* ================================================= */
+
+/* ================================================= */
+/* Sidebar and its elements                          */
+/* ================================================= */
+#sidebar {
+  border:  0px 0px 0px 0px;
+}
+
+#button {
+  padding:    10px;
+}
+
+#button selected {
+  font:              "iosevka 11";
+  background-color:  @fc-color-trans;
+}
+/* ================================================= */
+
+/* ================================================= */
+/*  Input bar                                        */
+/* ================================================= */
+#inputbar {
+  /* border: 0px 0px 3px 0px; */
+  /* border-color: #77978c; */
+  background-color:  @bg-color;
+  padding:           20px;
+  spacing:           10px;
+  
+}
+
+#prompt {
+  font: "iosevka 14";
+  color: @prompt-color;
+}
+
+#entry {
+  font: "iosevka 14";
+  width: 15em;
+  color: @prompt-color;
+}
+/* ================================================= */
+
+
+/* ================================================= */
+/* List view                                         */
+/* ================================================= */
+#listview {
+  /*spacing: 0.5em;*/
+}
+
+#element {
+  font:     "iosevka 11";
+  padding:  12px 1.5em 12px 14px;
+  color: #95948f;
+}
+
+#element selected normal {
+  background-color: @accent-color;
+  color: #dfdfdf;
+}
+
+#element normal active {
+  background-color: #a6a6a6;
+}
+
+#element normal urgent {
+  background-color: Orange;
+}
+
+#element alternate normal {
+}
+
+#element alternate active {
+  text-color: @focus-col;
+}
+
+#element alternate urgent {
+  background-color: OrangeRed;
+}
+
+#element selected active {
+  background-color:  #a6a6a6;
+}
+
+#element selected urgent {
+  background-color:  DarkOrange;
+}
+
+/* vim:ft=css */

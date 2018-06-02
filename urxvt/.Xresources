@@ -1,0 +1,216 @@
+!-- Xft settings -- !
+Xft.autohint:   0
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
+
+
+! -- URxvt Settings -- !
+URxvt.scrollBar: false
+URxvt.internalBorder: 20
+URxvt*cursorBlink: true
+
+! -- URxvt Perl --!
+URxvt.perl-lib: ~/.urxvt/perl/
+URxvt.perl-ext-common: font-size
+
+! -- Fonts -- !
+URxvt.font:xft:Fantasque Sans Mono:pixelsize=18
+URxvt.boldfont:xft:Fantansque Sans Mono, Bold:pixelsize=18
+!URxvt.font:xft:Hasklug Nerd Font:pixelsize=16
+!URxvt.boldfont:xft:Hasklug Nerd Font, Bold:pixelsize=16
+
+
+! -- Transparency -- !
+urxvt*transparent: false
+urxvt*shading: 5 
+
+! -- font-size -- !
+URxvt.keysym.C-j:     perl:font-size:increase
+URxvt.keysym.C-k:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
+URxvt.keysym.C-equal:  perl:font-size:reset
+URxvt.keysym.C-slash:  perl:font-size:show
+
+/* ! ----- Solarized Light ----- ! */
+/* #define S_base03        #002b36 */
+/* #define S_base02        #073642 */
+/* #define S_base01        #586e75 */
+/* #define S_base00        #657b83 */
+/* #define S_base0         #839496 */
+/* #define S_base1         #93a1a1 */
+/* #define S_base2         #eee8d5 */
+/* #define S_base3         #fdf6e3 */
+
+/* *background:            S_base3 */
+/* *foreground:            S_base00 */
+/* *fadeColor:             S_base3 */
+/* *cursorColor:           S_base01 */
+/* *pointerColorBackground:S_base1 */
+/* *pointerColorForeground:S_base01 */
+
+/* #define S_yellow        #b58900 */
+/* #define S_orange        #cb4b16 */
+/* #define S_red           #dc322f */
+/* #define S_magenta       #d33682 */
+/* #define S_violet        #6c71c4 */
+/* #define S_blue          #268bd2 */
+/* #define S_cyan          #2aa198 */
+/* #define S_green         #859900 */
+
+/* !! black dark/light */
+/* *color0:                S_base02 */
+/* *color8:                S_base03 */
+
+/* !! red dark/light */
+/* *color1:                S_red */
+/* *color9:                S_orange */
+
+/* !! green dark/light */
+/* *color2:                S_green */
+/* *color10:               S_base01 */
+
+/* !! yellow dark/light */
+/* *color3:                S_yellow */
+/* *color11:               S_base00 */
+
+/* !! blue dark/light */
+/* *color4:                S_blue */
+/* *color12:               S_base0 */
+
+/* !! magenta dark/light */
+/* *color5:                S_magenta */
+/* *color13:               S_violet */
+
+/* !! cyan dark/light */
+/* *color6:                S_cyan */
+/* *color14:               S_base1 */
+
+/* !! white dark/light */
+/* *color7:                S_base2 */
+/* *color15: S_base3 */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+! -- Pastel Colors -- !
+/* rxvt.background: #000000 */ 
+/* rxvt.foreground: #D3D2D3 */
+/* rxvt.color0: #000000 */
+/* rxvt.color1: #FF7768 */
+/* rxvt.color2: #ABFA68 */
+/* rxvt.color3: #FFFD88 */
+/* rxvt.color4: #98D0FE */
+/* rxvt.color5: #FF85FD */
+/* rxvt.color6: #CACBFE */
+/* rxvt.color7: #EFEFEF */
+/* rxvt.color8: #848484 */
+/* rxvt.color9: #FFBCB5 */
+/* rxvt.color10: #D1FCB1 */
+/* rxvt.color11: #FFFDD0 */
+/* rxvt.color12: #BADFFF */
+/* rxvt.color13: #FFA9FE */
+/* rxvt.color14: #E2E3FE */
+/* rxvt.color15: #FFFFFF */
+
+/* urxvt.background: #000000 */
+/* urxvt.foreground: #D3D2D3 */
+/* urxvt.color0: #000000 */
+/* urxvt.color1: #FF7768 */
+/* urxvt.color2: #ABFA68 */
+/* urxvt.color3: #FFFD88 */
+/* urxvt.color4: #98D0FE */
+/* urxvt.color5: #FF85FD */
+/* urxvt.color6: #CACBFE */
+/* urxvt.color7: #EFEFEF */
+/* urxvt.color8: #848484 */
+/* urxvt.color9: #FFBCB5 */
+/* urxvt.color10: #D1FCB1 */
+/* urxvt.color11: #FFFDD0 */
+/* urxvt.color12: #BADFFF */
+/* urxvt.color13: #FFA9FE */
+/* urxvt.color14: #E2E3FE */
+/* urxvt.color15: #FFFFFF */
+
+! colors
+! Navy & Gold
+/* #define FG              #E8DFD6 */
+/* #define BG              #021B21 */
+/* #define cursor          #2E3340 */
+/* #define black           #032C36 */
+/* #define cyan            #065F73 */
+/* #define red             #C2454E */
+/* #define brightred       #EF5847 */
+/* #define green           #7CBF9E */
+/* #define brightgreen     #A2D9B1 */
+/* #define white           #8A7A63 */
+/* #define brightwhite     #BEB090 */
+/* #define brightblack     #2E3340 */
+/* #define blue            #61778D */
+/* #define magenta         #FF5879 */
+/* #define brightmagenta   #FF99A1 */
+/* #define brightcyan      #44B5B1 */
+/* #define brightblue      #9ED9D8 */
+/* #define yellow          #F2F1B9 */
+/* #define brightyellow    #F6F6C9 */
+
+/* *.foreground:   FG */
+/* *.background:   BG */
+/* *.cursorColor:  cursor */
+/* *.color0:       black */
+/* *.color8:       cyan */
+/* *.color1:       red */
+/* *.color9:       brightred */
+/* *.color2:       green */
+/* *.color10:      brightgreen */
+/* *.color3:       white */
+/* *.color11:      brightwhite */
+/* *.color4:       brightblack */
+/* *.color12:      blue */
+/* *.color5:       magenta */
+/* *.color13:      brightmagenta */
+/* *.color6:       brightcyan */
+/* *.color14:      brightblue */
+/* *.color7:       yellow */
+/* *.color15:      brightyellow */
+
+! Witchy Colors
+! special
+*.foreground:   #a1a8b9
+*.background:   #131c26
+*.cursorColor:  #a1a8b9
+
+! black
+*.color0:       #725f8f
+*.color8:       #b18bbf
+
+! red
+*.color1:       #c6586f
+*.color9:       #c17286
+
+! green
+*.color2:       #a18174
+*.color10:      #a29395
+
+! yellow
+*.color3:       #c67d6f
+*.color11:      #dba5a8
+
+! blue
+*.color4:       #a15894
+*.color12:      #be8ac9
+
+! magenta
+*.color5:       #c65894
+*.color13:      #db8ac9
+
+! cyan
+*.color6:       #977da1
+*.color14:      #baa8c9
+
+! white
+*.color7:       #95948f
+*.color15:      #ead1be
+
