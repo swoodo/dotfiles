@@ -16,8 +16,8 @@
   fc-color-trans: #45373c; 
   bg-color-trans: #121c27;
 
-  accent-color: #C87D6D;
-  prompt-color: #C8566E;
+  accent-color: #A25695;
+  prompt-color: #C87D6D;
 
   font: "iosevka 11";
 }
@@ -33,7 +33,7 @@
   anchor:        2;
   border:        0px 0px 0px 0px;
   transparency:  "real";
-  spacing: 270px;
+  spacing: 280px;
 
   orientation:  vertical;
   children:     [mainbox, dummy];
@@ -46,7 +46,7 @@
   background-color:  @bg-color-trans;
   /* spacing:           5.1em; */
   
-  border: 0px 3px 3px 3px;
+  border: 0px 1px 1px 1px;
   border-color: @accent-color;
 }
 

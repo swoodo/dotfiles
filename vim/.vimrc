@@ -26,6 +26,23 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+"
+
+"Javascript
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'leshill/vim-json'
+
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
+
+
+
+" NerdTree
+Plugin 'scrooloose/nerdtree'
+
+" YouCompleteMe
+Plugin 'valloric/youcompleteme'
 
 " vim-commentary
 Plugin 'tpope/vim-commentary'
@@ -94,3 +111,10 @@ let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=8
+
+" AUTOCOMPLETION
+filetype plugin on
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+" NerdTree
+map <C-t> :NERDTreeToggle<CR>

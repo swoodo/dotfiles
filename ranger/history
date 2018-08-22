@@ -1,5 +1,3 @@
-open_with vlc
-search matrix
 search vis
 rename Wallpaper
 rename flcl-2.png
@@ -7,16 +5,46 @@ wq
 hide
 hidden
 mkdir .fonts
-sudo
 mkdir vim
 mkdir urxvt
 mkdir polybar
 mkdir rofi
 ranger
 mkdir ranger
-
 mkdir .urxvt
 mkdir themes
 mkdir .themes
-delete
 mkdir compton
+rename His and Her Circumstances
+bulkrename 
+mkfir Your Name
+mkdir "Your Name"
+rename Your Name
+rename Your Name (2016).mp4
+rename Your Name (2016).srt
+rename Isle of Dogs (2018).srt
+rename Spider-Man Homecoming (2017).mkv
+rename The Big Sleep (1946).MKV
+rename The Big Sleep (1946).mkv
+find 
+rename Wag the Dog (1997).mp4
+open_with 
+rename Wag the Dog (1997).srt
+open_with j
+search matrix
+delete
+filter Death 
+rename Fashion Week
+f Dea
+filter 
+redraw_window 
+shell 
+
+reload_cwd 
+search Web
+terminal 
+search web
+search 
+search plex
+sudo
+chmod 7

@@ -31,13 +31,14 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "urxvt -e $SHELL -c 'fortune|cowsay|lolcat;$SHELL -i'"
+bindsym $mod+Return exec "urxvt -e $SHELL -c 'fortune|lolcat;$SHELL -i'"
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run -display-run ">"
+bindsym $mod+c exec rofi -show drun -display-drun ">"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -166,12 +167,12 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Compton
-exec --no-startup-id compton
-
-
+exec --no-startup-id compton --config ~/.config/compton.conf -b
 # Status Bar
 #                 RRGGBBAA
 set $transparent #00000000
+
+set $border2 #131C26
 
 bar {
 	i3bar_command i3bar -t
@@ -189,18 +190,18 @@ bar {
 }
 
 # Borders
-set $border1 #77978C
+set $border1 #725D90
 # class                 border       backgr. text    indicator    child_border
 client.focused          $border1     #285577 #ffffff $border1     $border1 
-client.focused_inactive $transparent #5f676a #ffffff $transparent $transparent
-client.unfocused        $transparent #222222 #888888 #292d2e      $transparent 
+client.focused_inactive $border2     #5f676a #ffffff $border2     $border2
+client.unfocused        $border2     #222222 #888888 #292d2e      $border2 
 client.urgent           #2f343a      #900000 #ffffff #900000      #900000
 client.placeholder      #000000      #0c0c0c #ffffff #000000      #0c0c0c
  
 client.background       #ffffff
 
 # Gaps
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 gaps inner 20 
 gaps outer 10
 
@@ -222,6 +223,10 @@ exec_always --no-startup-id ~/.config/polybar/polybar.sh &
 # nm-applet
 exec --no-startup-id nm-applet 
 
+
+# nvidia
+exec --no-startup-id nvidia-settings --assign CurrentMetaMode="eDP-1-1:1920x1080_60 +0+0 { ForceFullCompositionPipeline = On }, HDMI-1-1:1920x1080_60 +1920+0 { ForceFullCompositionPipeline = On }"
+
 # Wallpaper
 # exec --no-startup-id feh --bg-tile ~/Media/Pictures/Wallpaper/solarized.png
-exec --no-startup-id feh --bg-scale ~/Media/Pictures/Wallpaper/flcl-2.png
+exec --no-startup-id feh --bg-scale ~/Media/Pictures/Wallpaper/evangelion-3.png

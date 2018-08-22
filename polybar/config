@@ -17,7 +17,7 @@ foreground-alt = #C87D6D
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
-border = #C87D6D
+border = #A25695
 
 [bar/sander]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -36,7 +36,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 3
+border-size = 1
 border-color = ${colors.border}
 
 padding-left = 0
@@ -94,7 +94,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#95948F}%mountpoint%%{F-} %free%
+label-mounted = %{F#977CA2}%mountpoint%%{F-} %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -104,7 +104,7 @@ interval = 25
 
 mount-0 = /media/sander/Files
 
-label-mounted = %{F#95948F}SSD%{F-} %free%
+label-mounted = %{F#977CA2}SSD%{F-} %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 

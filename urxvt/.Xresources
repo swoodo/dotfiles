@@ -7,6 +7,9 @@ Xft.hinting:    true
 Xft.hintstyle:  hintslight
 Xft.lcdfilter:  lcddefault
 
+! -- power settings -- !
+xset s off
+xset -dpms
 
 ! -- URxvt Settings -- !
 URxvt.scrollBar: false
