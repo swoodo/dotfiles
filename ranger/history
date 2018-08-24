@@ -1,8 +1,3 @@
-search vis
-rename Wallpaper
-rename flcl-2.png
-wq
-hide
 hidden
 mkdir .fonts
 mkdir vim
@@ -39,7 +34,6 @@ f Dea
 filter 
 redraw_window 
 shell 
-
 reload_cwd 
 search Web
 terminal 
@@ -48,3 +42,9 @@ search
 search plex
 sudo
 chmod 7
+search ze
+search x11
+search fonts
+search zev
+cwd
+

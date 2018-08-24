@@ -190,7 +190,7 @@ bar {
 }
 
 # Borders
-set $border1 #725D90
+set $border1 #4d9bdb
 # class                 border       backgr. text    indicator    child_border
 client.focused          $border1     #285577 #ffffff $border1     $border1 
 client.focused_inactive $border2     #5f676a #ffffff $border2     $border2
@@ -229,4 +229,4 @@ exec --no-startup-id nvidia-settings --assign CurrentMetaMode="eDP-1-1:1920x1080
 
 # Wallpaper
 # exec --no-startup-id feh --bg-tile ~/Media/Pictures/Wallpaper/solarized.png
-exec --no-startup-id feh --bg-scale ~/Media/Pictures/Wallpaper/evangelion-3.png
+exec --no-startup-id feh --bg-scale ~/Media/Pictures/Wallpaper/neon-2.png

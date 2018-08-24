@@ -13,12 +13,11 @@ background = #121C27
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #C87D6D
+foreground-alt = #f5bb71
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
-border = #A25695
-
+border = #4d9bdb
 [bar/sander]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 90%
@@ -45,7 +44,8 @@ padding-right = 3
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = iosevka:pixelsize=10;2
+;font-0 = iosevka:pixelsize=10;2
+font-0 = dina:pixelsize=11;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = FontAwesome:pixelsize=10;3
@@ -94,7 +94,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#977CA2}%mountpoint%%{F-} %free%
+label-mounted = %{F#e18d98}%mountpoint%%{F-} %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -104,7 +104,7 @@ interval = 25
 
 mount-0 = /media/sander/Files
 
-label-mounted = %{F#977CA2}SSD%{F-} %free%
+label-mounted = %{F#e18d98}SSD%{F-} %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -402,5 +402,5 @@ click-middle = cmus-remote --prev
 
 format = <label>
 format-underline = ${colors.background}
-label-foreground = ${colors.border}
+label-foreground = ${colors.foreground-alt}
 label = %output%

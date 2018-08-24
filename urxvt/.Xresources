@@ -21,8 +21,19 @@ URxvt.perl-lib: ~/.urxvt/perl/
 URxvt.perl-ext-common: font-size
 
 ! -- Fonts -- !
-URxvt.font:xft:Fantasque Sans Mono:pixelsize=18
-URxvt.boldfont:xft:Fantansque Sans Mono, Bold:pixelsize=18
+! URxvt.font:xft:Fantasque Sans Mono:pixelsize=18
+! URxvt.boldfont:xft:Fantansque Sans Mono, Bold:pixelsize=18a
+
+!URxvt.font: xft:dina:size=11:antialias=true:hinting=true
+!URxvt.boldFont: xft:dina:size=11:antialias=true:hinting=true:style=bold
+
+URxvt.font: xft:peep:size=14:antialias=true:hinting=true
+URxvt.boldFont: xft:peep:size=14:antialias=true:hinting=true:style=bold
+
+
+!URxvt.font:xft:iosevka:pixelsize=18
+!URxvt.boldfont:xft:iosevka, Bold:pixelsize=18
+
 !URxvt.font:xft:Hasklug Nerd Font:pixelsize=16
 !URxvt.boldfont:xft:Hasklug Nerd Font, Bold:pixelsize=16
 

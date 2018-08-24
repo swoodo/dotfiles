@@ -16,10 +16,10 @@
   fc-color-trans: #45373c; 
   bg-color-trans: #121c27;
 
-  accent-color: #A25695;
-  prompt-color: #C87D6D;
+  accent-color: #4d9bdb;
+  prompt-color: #f5bb71;
 
-  font: "iosevka 11";
+  font: "dina 11";
 }
 
 /* ================================================= */
@@ -27,13 +27,14 @@
 /* ================================================= */
 #window {
   
-  width:	 90%;
+  width:	 500;
   fullscreen:    false;
-  location:      2;
-  anchor:        2;
+  location:      west;
+  anchor:        8;
   border:        0px 0px 0px 0px;
+  margin:        0px 0px 0px 96px;
   transparency:  "real";
-  spacing: 280px;
+  spacing: 319px;
 
   orientation:  vertical;
   children:     [mainbox, dummy];
@@ -68,7 +69,7 @@
 }
 
 #button selected {
-  font:              "iosevka 11";
+  font:              "dina 11";
   background-color:  @fc-color-trans;
 }
 /* ================================================= */
@@ -86,12 +87,12 @@
 }
 
 #prompt {
-  font: "iosevka 14";
+  font: "dina 14";
   color: @prompt-color;
 }
 
 #entry {
-  font: "iosevka 14";
+  font: "dina 14";
   width: 15em;
   color: @prompt-color;
 }
@@ -106,7 +107,7 @@
 }
 
 #element {
-  font:     "iosevka 11";
+  font:     "dina 11";
   padding:  12px 1.5em 12px 14px;
   color: #95948f;
 }

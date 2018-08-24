@@ -118,3 +118,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 " NerdTree
 map <C-t> :NERDTreeToggle<CR>
+
+
+"delete remap
+nnoremap x "_d
+xnoremap x "_d
