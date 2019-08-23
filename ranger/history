@@ -1,33 +1,5 @@
-hidden
-mkdir .fonts
-mkdir vim
-mkdir urxvt
-mkdir polybar
-mkdir rofi
-ranger
-mkdir ranger
-mkdir .urxvt
-mkdir themes
-mkdir .themes
-mkdir compton
-rename His and Her Circumstances
-bulkrename 
-mkfir Your Name
-mkdir "Your Name"
-rename Your Name
-rename Your Name (2016).mp4
-rename Your Name (2016).srt
-rename Isle of Dogs (2018).srt
-rename Spider-Man Homecoming (2017).mkv
-rename The Big Sleep (1946).MKV
-rename The Big Sleep (1946).mkv
-find 
-rename Wag the Dog (1997).mp4
-open_with 
-rename Wag the Dog (1997).srt
 open_with j
 search matrix
-delete
 filter Death 
 rename Fashion Week
 f Dea
@@ -36,7 +8,6 @@ redraw_window
 shell 
 reload_cwd 
 search Web
-terminal 
 search web
 search 
 search plex
@@ -47,4 +18,33 @@ search x11
 search fonts
 search zev
 cwd
+search back
+search glib
+search background
+rename Green-Wall-Logo.old
+search ps
+gimp
+search ps-m
+search gimp
+rename menurc.backup
+rename menurc
+search layer-via
+ter
+search layer
+search soul
+rename
+open_with vim
+open_with zathura
+open_with libreoffice
+w
+open_with l
 
+terminal 
+mkdir Games
+mkdir Diablo
+mkdir devilutionx
+search devil
+rename diabdat.mpq
+open_with lllllllllllll
+delete
+open_with 

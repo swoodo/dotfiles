@@ -11,13 +11,13 @@
   /* This variables change other elements color
    * Change here and it will change over all the
    * theme (for an unified experience) */
-  fc-color: #dfdfdf;
-  bg-color: #121c27;
+  fc-color: #000;
+  bg-color: #fdf6e3;
   fc-color-trans: #45373c; 
-  bg-color-trans: #121c27;
+  bg-color-trans: #fdf6e3;
 
-  accent-color: #4d9bdb;
-  prompt-color: #f5bb71;
+  accent-color: #93a1a1;
+  prompt-color: #93a1a1;
 
   font: "dina 11";
 }
@@ -32,9 +32,9 @@
   location:      west;
   anchor:        8;
   border:        0px 0px 0px 0px;
-  margin:        0px 0px 0px 96px;
+  margin:        6px 0px 0px 192px;
   transparency:  "real";
-  spacing: 319px;
+  spacing: 325px;
 
   orientation:  vertical;
   children:     [mainbox, dummy];
@@ -47,7 +47,7 @@
   background-color:  @bg-color-trans;
   /* spacing:           5.1em; */
   
-  border: 0px 1px 1px 1px;
+  border: 0px 3px 3px 3px;
   border-color: @accent-color;
 }
 
@@ -83,13 +83,13 @@
   background-color:  @bg-color;
   padding:           20px;
   spacing:           10px;
-  
 }
 
 #prompt {
   font: "dina 14";
   color: @prompt-color;
 }
+
 
 #entry {
   font: "dina 14";
@@ -109,11 +109,11 @@
 #element {
   font:     "dina 11";
   padding:  12px 1.5em 12px 14px;
-  color: #95948f;
+  color: #000;
 }
 
 #element selected normal {
-  background-color: @accent-color;
+  background-color: #93a1a1;
   color: #dfdfdf;
 }
 

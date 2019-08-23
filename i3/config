@@ -31,7 +31,10 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "urxvt -e $SHELL -c 'fortune|lolcat;$SHELL -i'"
+bindsym $mod+Return exec "urxvt"
+
+# start a terminal within cwd
+bindsym $mod+Shift+Return exec urxvt -cd "`xcwd`"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -172,12 +175,12 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 #                 RRGGBBAA
 set $transparent #00000000
 
-set $border2 #131C26
+set $border2 #fdf6e3
 
 bar {
 	i3bar_command i3bar -t
-	height 20 
-	position top
+	height 33
+	position top 
 	colors {
 
         	background $transparent
@@ -190,20 +193,20 @@ bar {
 }
 
 # Borders
-set $border1 #4d9bdb
-# class                 border       backgr. text    indicator    child_border
-client.focused          $border1     #285577 #ffffff $border1     $border1 
-client.focused_inactive $border2     #5f676a #ffffff $border2     $border2
-client.unfocused        $border2     #222222 #888888 #292d2e      $border2 
-client.urgent           #2f343a      #900000 #ffffff #900000      #900000
-client.placeholder      #000000      #0c0c0c #ffffff #000000      #0c0c0c
+set $border1 #93a1a1
+# class                 border       backgr.      text    indicator    child_border
+client.focused          $border1     #000080      #ffffff $border1     $border1 
+client.focused_inactive $border2     #5f676a      #ffffff $border2     $border2
+client.unfocused        $border2     #F0F0F0      #888888 #292d2e      $border2 
+client.urgent           #2f343a      #900000      #ffffff #900000      #900000
+client.placeholder      #000000      #0c0c0c      #ffffff #000000      #0c0c0c
  
 client.background       #ffffff
 
 # Gaps
-for_window [class="^.*"] border pixel 1
-gaps inner 20 
-gaps outer 10
+for_window [class="^.*"] border pixel 3
+gaps inner 10
+gaps outer 0
 
 # Swap caps
 exec --no-startup-id setxkbmap -option ctrl:swapcaps
@@ -223,10 +226,17 @@ exec_always --no-startup-id ~/.config/polybar/polybar.sh &
 # nm-applet
 exec --no-startup-id nm-applet 
 
+# trackpoint stick speed
+exec --no-startup-id xinput --set-prop 'AlpsPS/2 ALPS DualPoint Stick' 'Coordinate Transformation Matrix' 0.25 0 0 0 0.25 0 0 0 1
+
+# elecom speed
+exec --no-startup-id xinput --set-prop 'pointer:ELECOM ELECOM TrackBall Mouse' 'Coordinate Transformation Matrix' 0.25 0 0 0 0.25 0 0 0 1
 
 # nvidia
 exec --no-startup-id nvidia-settings --assign CurrentMetaMode="eDP-1-1:1920x1080_60 +0+0 { ForceFullCompositionPipeline = On }, HDMI-1-1:1920x1080_60 +1920+0 { ForceFullCompositionPipeline = On }"
 
 # Wallpaper
-# exec --no-startup-id feh --bg-tile ~/Media/Pictures/Wallpaper/solarized.png
-exec --no-startup-id feh --bg-scale ~/Media/Pictures/Wallpaper/neon-2.png
+exec --no-startup-id feh --bg-tile ~/Media/Pictures/Wallpaper/solarized-xxx-2.png
+#exec --no-startup-id feh --bg-scale ~/Media/Pictures/Wallpaper/mist.jpg
+# exec --no-startup-id feh --bg-scale ~/Media/Pictures/Wallpaper/ocean3.jpg
+

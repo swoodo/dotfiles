@@ -28,6 +28,16 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 "
 
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+
+"Lorem Ipsum
+Plugin 'vim-scripts/loremipsum'
+
 "Javascript
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -75,15 +85,36 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 
+" UltiSnips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+let g:SuperTabDefaultCompletionType    = '<C-n>'
+let g:SuperTabCrMapping                = 0
+let g:UltiSnipsExpandTrigger           = '<C-space>'
+let g:UltiSnipsJumpForwardTrigger      = '<C-space>'
+let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
+" let g:ycm_key_list_select_completion   = ['<tab>, <C-j>', '<C-n>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+
+
 
 " Enable Mouse
 :set mouse=a
 
 " Set indent
 set shiftwidth=2
+set tabstop=2
 
 " Toggle line number
-:nmap <C-l> :set invnumber<CR>
+:set number
+:nmap <C-l><C-l> :set invnumber<CR>
+:highlight LineNr ctermfg=black
 
 " lightline stuff
 set laststatus=2
@@ -123,3 +154,12 @@ map <C-t> :NERDTreeToggle<CR>
 "delete remap
 nnoremap x "_d
 xnoremap x "_d
+
+"remap yank
+set clipboard=unnamedplus
+
+"splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
